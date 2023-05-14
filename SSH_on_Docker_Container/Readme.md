@@ -48,8 +48,8 @@
 PermitRootLogin yes
 ```
 
-![Untitled](./sshd_config_file.png)
-
+<!-- ![Untitled](./sshd_config_file.png) -->
+<img src="./sshd_config_file.png"  width="400" height="500">
 ---
 
 - now open another terminal on mac and enter the following
@@ -62,8 +62,8 @@ PermitRootLogin yes
     - once you enter you will be able to ssh into it easily
 
 ---
-
-- We can achieve the same above result by one dockerfile :
+# Dockerfile 🧐
+- We can achieve the same result as above by one dockerfile :
     - make a dockerfile :
     
     ```bash
@@ -86,7 +86,7 @@ PermitRootLogin yes
     docker build -t my-debian-image .
     ```
     
-    - an image called my-debian-image  will get created
+    - on running the above command a Docker Image named my-debian-image  will get created
 - now to run the container from the above image :
     
     ```bash
