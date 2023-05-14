@@ -1,6 +1,6 @@
-# SSH Into A Docker Container
+# SSH 🔐 Into A Docker Container 😎
 
-- First Pull Ubuntu Docker image from Docker Hub
+- First Pull Ubuntu 🐧 Docker image from Docker Hub
     
     ```bash
     docker pull ubuntu:latest
@@ -43,12 +43,12 @@
     ```
     
 - Now we need to change the contents of `sshd_config` file : add the following line
+    - move to etc/ssh and open sshd_config file in your prefered code editor and add the following line
+        ```bash
+        PermitRootLogin yes
+        ```
 
-```bash
-PermitRootLogin yes
-```
-
-<!-- ![Untitled](./sshd_config_file.png) -->
+- Your file should look something like This :
 <img src="./sshd_config_file.png"  width="400" height="500">
 ---
 
